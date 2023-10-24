@@ -1,0 +1,51 @@
+/* Este es el CSS para los botones */
+button {
+    background-color: #ada2e8; /* El color de fondo del botón */
+    color: #ffffff; /* El color del texto en el botón */
+    border: 1px solid #fcfbfb; /* El borde del botón */
+    padding: 20px; /* El relleno del botón */
+    margin: 30px; /* El margen del botón */
+}
+
+  /* Este es el CSS para centrar el contenido */
+body {
+    background-color: #ffffff;
+    text-align: center;
+    margin: 1;
+    max-width: 100%;
+}
+
+  /* Este es el CSS para la tipografía */
+body {
+    font-family: Arial, sans-serif; /* La familia de fuentes del texto del cuerpo */
+    font-size: 16px; /* El tamaño de la fuente del texto del cuerpo */
+}
+
+nav {
+    padding: 20px; /* el relleno del bloque */
+    margin: 100 auto
+}
+
+
+#textContainer {
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    animation: textAnimation 5s infinite;
+}
+@keyframes textAnimation {
+    0% {
+opacity: 0;
+    }
+    50% {
+opacity: 1;
+    }
+    100% {
+opacity: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+}
