@@ -10,6 +10,20 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+<!-- Este código crea un banner de aceptación de cookies en español. -->
+
+<div class="cookie-banner">
+  <p>Este sitio web utiliza cookies para mejorar su experiencia de navegación. Al continuar navegando, usted acepta el uso de cookies.</p>
+  <button>Aceptar</button>
+</div>
+
+<!-- Este código oculta el banner de aceptación de cookies después de que el usuario hace clic en el botón "Aceptar". -->
+
+<script>
+  document.querySelector('.cookie-banner button').addEventListener('click', () => {
+    document.querySelector('.cookie-banner').style.display = 'none';
+  });
+</script>
   <div>
     <img src="imagenes/DECOSANT-1.jpg" alt="">
   </div>
@@ -23,7 +37,7 @@
     <img src="imagenes/DECOSANT-2.jpg" alt="">
   </div>
   <main>
-    <section>
+    <section class="container">
         <!-- esta es una seccion que tiene 3 niveles de articulos de la ceramica-->
         <article>
           <h1>Céramica mas completa</h1>
@@ -59,20 +73,29 @@
         <script src="script.js/"></script>
     </section>
   </main>
-  <form action="" method="post">
+  <div class="container">
+      <form action="" method="post">
     <label for="fname">Nombre:</label><br>
     <input type="text" id="fname" name="fname"><br>
     <label for="lname">Apellido:</label><br>
     <input type="text" id="lname" name="lname"><br>
     <label for="area">Consulta:</label><br>
-    <textarea name="area" id="area" cols="20" rows="5"></textarea><br>
+    <textarea name="area" id="area" cols="50" rows="15"></textarea><br>
     <label for="email">Email:</label><br>
     <input type="text" id="email" name="email"><br><br>
     <input type="submit" value="Enviar">
     <input type="reset" value="Borrar Campos">
-  </form>
+      </form>
+  </div>
+
   <div class="map">
-    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2182001280615!2d-58.43171828481022!3d-34.59461118051053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca31a4a52127%3A0x7a14560c287b542b!2sCongreso+2640%2C+C1428AAN+CABA!5e0!3m2!1ses!2sar!4v1668781114070!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2182001280615!2d-58.43171828481022!3d-34.59461118051053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca31a4a52127%3A0x7a14560c287b542b!2sCongreso+2640%2C+C1428AAN+CABA!5e0!3m2!1ses!2sar!4v1668781114070!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+  </div>
+  <div id="whatsapp-button">
+    <!-- El boton de Whatsapp -->
+    <a href="https://web.whatsapp.com/">
+      <img src="imagenes/whatsapp.png" alt="WhatsApp">
+    </a>
   </div>
   <footer style="background-color: black; text-align: center;">
     <p style="color: white;">DECOSANT 2023</p>
@@ -80,5 +103,6 @@
     <p style="color: white;">Email: fatimagonzalezcalderon@gmail.com</p>
     <p style="color: white;">Dirección: Av. Congreso 2640</p>
   </footer>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </body>
 </html>
